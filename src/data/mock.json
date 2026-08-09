@@ -1,0 +1,82 @@
+{
+  "student": {
+    "name": "Ishita Verma",
+    "initials": "IV",
+    "avatarUrl": null,
+    "track": "Full-Stack Web Dev",
+    "college": "IIIT Lucknow",
+    "currentDay": 12,
+    "totalDays": 60,
+    "currentStreak": 11,
+    "longestStreak": 11,
+    "completedDays": 11,
+    "streakFreezesUsed": 1,
+    "streakFreezesTotal": 3,
+    "percentile": 8,
+    "cohortSize": 1240,
+    "badges": [
+      { "id": "b1", "label": "First Commit", "earned": true },
+      { "id": "b2", "label": "7-Day Streak", "earned": true },
+      { "id": "b3", "label": "Freeze Saved Me", "earned": true },
+      { "id": "b4", "label": "30-Day Streak", "earned": false },
+      { "id": "b5", "label": "Halfway There", "earned": false },
+      { "id": "b6", "label": "60-Day Finisher", "earned": false }
+    ]
+  },
+  "days": [
+    { "day": 1, "status": "completed" },
+    { "day": 2, "status": "completed" },
+    { "day": 3, "status": "completed" },
+    { "day": 4, "status": "completed" },
+    { "day": 5, "status": "completed" },
+    { "day": 6, "status": "completed" },
+    { "day": 7, "status": "frozen" },
+    { "day": 8, "status": "completed" },
+    { "day": 9, "status": "completed" },
+    { "day": 10, "status": "completed" },
+    { "day": 11, "status": "completed" },
+    {
+      "day": 12,
+      "status": "today",
+      "title": "Build a rate-limited API middleware",
+      "trackLabel": "Full-Stack Web Dev · Backend week",
+      "estMinutes": 90,
+      "brief": "Recruiters skim commit histories before they read resumes. Today's build shows you can reason about abuse and load, not just happy paths.",
+      "spec": [
+        "Write an Express (or Fastify) middleware that limits a client to 20 requests per minute per IP.",
+        "Return a 429 with a clear JSON error body and a Retry-After header when the limit is hit.",
+        "Store counters in memory using a sliding window, not a fixed reset clock.",
+        "Add one test that proves the 21st request in a minute is rejected."
+      ],
+      "resources": [
+        { "label": "Sliding window vs fixed window (5 min read)", "url": "#" },
+        { "label": "Express middleware docs", "url": "#" },
+        { "label": "Reference repo from Day 5 (for middleware pattern)", "url": "#" }
+      ]
+    },
+    { "day": 13, "status": "upcoming" },
+    { "day": 14, "status": "upcoming" }
+  ],
+  "landing": {
+    "stats": [
+      { "value": "12,400+", "label": "students on active streaks" },
+      { "value": "60", "label": "days, one commit at a time" },
+      { "value": "3", "label": "tracks to choose from" }
+    ],
+    "tracks": [
+      { "name": "Full-Stack Web Dev", "detail": "APIs, auth, databases, deploys" },
+      { "name": "DSA & Interview Prep", "detail": "One problem, one pattern, daily" },
+      { "name": "ML Foundations", "detail": "From NumPy to your first model" }
+    ],
+    "steps": [
+      { "title": "Pick a track", "detail": "Choose Web Dev, DSA, or ML. Switch once in the first week if it's not clicking." },
+      { "title": "Ship daily", "detail": "One task a day, sized for 60–90 minutes after class." },
+      { "title": "Prove it", "detail": "A GitHub commit and a LinkedIn post. Both public, both yours." },
+      { "title": "Get seen", "detail": "Your streak becomes a visible record recruiters can actually check." }
+    ],
+    "testimonials": [
+      { "quote": "I stopped tutorial-hopping. Day 40 is when a recruiter first messaged me on LinkedIn.", "name": "Rohan K.", "meta": "NIT Trichy · Web Dev track" },
+      { "quote": "The streak freeze saved me during my end-sems. I didn't lose 3 weeks of consistency over one bad week.", "name": "Aisha M.", "meta": "IIIT Lucknow · DSA track" }
+    ]
+  }
+}
